@@ -1,0 +1,129 @@
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+
+body {
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 0.05rem solid #fff;
+}
+
+.map-container {
+  height: 1000px;
+}
+
+.loading-content-container {
+  background-color: #555;
+}
+.spinner-container {
+  height: 800px;
+  background-color: #555;
+  display: flex;
+  justify-content: center;
+}
+.spinner-container .spinner-border {
+  margin: auto;
+}
+
+.legend-container {
+  margin: 0;
+  font-size: 15px;
+  /* line-height: 35px; */
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.legend-container .header {
+  margin: 0;
+  font-size: 17px;
+}
+
+ul.legend {
+  /* font-size: 15px; */
+  line-height: 35px;
+  /* color: #000; */
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  padding: 0px;
+  list-style: none;
+}
+
+ul.legend li {
+  display: block;
+  height: 35px;
+}
+
+.legend i {
+  width: 35px;
+  height: 35px;
+  float: left;
+  margin-right: 15px;
+  opacity: 0.7;
+}
+
+table.info {
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+}
+
+table.info th {
+  background: none;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+table.info tr {
+  width: 100px;
+}
+
+table.info td {
+  padding: 7px 5px;
+  background: none;
+}
+
+table.info tr td:first-child {
+  float: right;
+  font-weight: 800;
+}
+
+table.info .limit {
+  color: rgb(255, 0, 0);
+}
+
+.nav-masthead .nav-link {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: #fff;
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: #fff;
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 1201px) {
+  .map-container {
+    margin: 0 5%;
+  }
+}

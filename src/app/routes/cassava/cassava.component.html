@@ -1,0 +1,18 @@
+<h4 class="text-center">Cassava Production Map</h4>
+<ng-container *ngIf="geoRasterLayer as geoRasterLayer; else loading">
+  <app-map
+    [containerId]="'cassava-map'"
+    [geoRasterLayer]="geoRasterLayer"
+    [geoJsonData]="geoJsonData"
+  ></app-map>
+</ng-container>
+
+<ng-template #loading>
+  <div class="loading-content-container">
+    <div class="spinner-container text-center">
+      <div class="spinner-border" role="status">
+        <span class="sr-only"></span>
+      </div>
+    </div>
+  </div>
+</ng-template>
